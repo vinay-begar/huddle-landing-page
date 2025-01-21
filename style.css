@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --Poppins: "poppins", serif;
+  --open-sans: "Open Sans", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--open-sans);
+}
+main{
+  height: 100vh;
+  width: 100%;
+  background: url(./images/bg-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--Violet);
+}
+/* ----Parent---- */
+.parent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  /* align-self: self-start; */
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.logo>img{
+  width: 200px;
+}
+
+/* ----- Content------ */
+
+.content{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-left{
+  width: 53%;
+}
+
+.content-left > img{
+  padding-left: 50px;
+}
+.content-right{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 47%;
+  height: 75%;
+  color: #fff;
+}
+.content-right > h2{
+    font-size: 3rem;
+    font-family: var(--Poppins);
+}
+.content-right > p{
+  width: 80%;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.content-right >button{
+  width: 24%;
+  height: 10%;
+  border-radius: 20px;
+  border: none;
+}
+
+/* ------ Social ----- */
+.social{
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 7rem;
+}
+ .fa-facebook, .fa-twitter, .fa-instagram{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 4px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+}
+@media (max-width:375px) {
+  main{
+    overflow-x: hidden;
+  }
+  .content-left>img{
+    height: 300px;
+    width: 300px;
+    padding-right: 80px;
+    padding-left:4px;
+    padding-top: 50px;
+  }
+  .content{
+    flex-direction:column;
+    gap: 50px;
+    
+  }
+  .content-right{
+    width: 100%;
+    text-align: center;
+    gap:25px;
+  }
+  .content-right >h2{
+    flex-direction: row;
+    font-size:25px;
+  }
+  .content-right > p{
+    padding-left: 50px;
+    font-size: 1rem;
+  }
+  .content-right > button{
+    height: 12%;
+    width: 55%;
+    margin-left:80px;
+  }
+}
