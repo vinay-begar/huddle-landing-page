@@ -3,7 +3,7 @@
 
 ### Links
 
-- Solution URL: [Github](https://github.com/vinay-parit/Recipe-Page)
+- Solution URL: [Github](https://github.com/vinay-begar/huddle-landing-page)
 - Live Site URL: [Vercel Link](https://recipe-page-tau-eight.vercel.app/)
 
 ### ScreenShot
